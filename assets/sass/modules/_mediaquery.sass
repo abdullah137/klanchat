@@ -1,0 +1,36 @@
+// Tablets Or Less Responsive Design
+@media screen and (max-width: 720px)
+  // Header
+  header
+    .page-nav.flex
+      flex-flow: column nowrap
+      justify-content: space-between
+
+  header
+    #toggle-btn
+      position: fixed
+      left: .25em
+
+
+// Mobile Responsive Design
+@media screen and (max-width: 540px)
+  // Footer
+  .foot-nav.flex
+    flex-flow: column nowrap
+
+  .foot-nav.flex >
+    div,
+    nav
+      text-align: center
+
+  .foot-nav.flex >
+    div,
+    nav
+      a
+        display: block
+        padding: .5em 1em
+
+  .foot-nav.flex >
+    nav >
+      .flex
+        flex-flow: row wrap

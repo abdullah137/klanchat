@@ -1,0 +1,50 @@
+// Text Alignment
+.text-center
+  text-align: center
+
+.text-left
+  text-align: left
+
+.text-right
+  text-align: right
+
+.text-justify
+  text-align: justify
+
+// Padding
+@for $var from 1 through 5
+  .py-#{$var}
+    padding: (0.5em * $var) 0
+
+@for $var from 1 through 5
+  .p-#{$var}
+    padding: (0.5em * $var)
+
+// Margin
+@for $var from 1 through 5
+  .my-#{$var}
+    margin: (0.5em * $var) 0
+
+@for $var from 1 through 5
+  .m-#{$var}
+    margin: (0.5em * $var)
+
+// Flex
+.flex
+  display: flex
+  flex-flow: row wrap
+  justify-content: center
+
+// Grid
+.grid
+  display: grid
+  grid-template-columns: repeat(12, 1fr)
+  justify-content: center
+  align-items: center
+
+// Animation
+@keyframes big-to-small
+  0%
+    transform: scale(1)
+  100%
+    transform: scale(.98)
